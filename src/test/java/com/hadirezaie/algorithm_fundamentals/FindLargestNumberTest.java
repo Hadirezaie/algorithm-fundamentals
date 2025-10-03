@@ -40,4 +40,25 @@ public class FindLargestNumberTest {
         int result = FindLargestNumber.findLargestNum(numbers);
         assertEquals(4, result);
     }
+
+    @Test
+    void testFindMaximum_withEmptyArray() {
+        int[] numbers = {};
+        try {
+            FindLargestNumber.findLargestNum(numbers);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Array cannot be empty or null", e.getMessage());
+        }
+    }
+
+    @Test
+    void testFindMaximum_withNullArray() {
+        int[] numbers = null;
+        try {
+            FindLargestNumber.findLargestNum(numbers);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Array cannot be empty or null", e.getMessage());
+        }
+    }
+
 }
