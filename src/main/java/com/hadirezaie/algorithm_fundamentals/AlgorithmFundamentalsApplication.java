@@ -14,6 +14,8 @@ public class AlgorithmFundamentalsApplication {
 		System.out.println("Largest number: " + result);
 
 		System.out.println("\n" + "=".repeat(40) + "\n");
+
+		Maximum.findMaximumWithLogging(testNumbers);
 	}
 
 }
