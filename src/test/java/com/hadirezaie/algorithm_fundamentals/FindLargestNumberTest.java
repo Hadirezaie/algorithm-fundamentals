@@ -13,4 +13,18 @@ public class FindLargestNumberTest {
         assertEquals(12, result);
     }
 
+    @Test
+    void testFindMaximum_withNegativeNumbers() {
+        int[] numbers = { -3, -7, -2, -9, -1, -8, -12, -4 };
+        int result = FindLargestNumber.findLargestNum(numbers);
+        assertEquals(-1, result);
+    }
+
+    @Test
+    void testFindFindMaximum_withMixedNumbers() {
+        int[] numbers = { -3, 7, -2, 9, -1, 8, -12, 4 };
+        int result = FindLargestNumber.findLargestNum(numbers);
+        assertEquals(9, result);
+    }
+
 }
