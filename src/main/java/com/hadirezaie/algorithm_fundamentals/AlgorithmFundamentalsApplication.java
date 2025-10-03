@@ -8,7 +8,12 @@ public class AlgorithmFundamentalsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AlgorithmFundamentalsApplication.class, args);
-		System.out.println("Hello World!");
+		// finding the largest number in an array
+		int[] testNumbers = { 3, 7, 2, 9, 1, 8, 12, 4 };
+		int result = Maximum.findMaximum(testNumbers);
+		System.out.println("Largest number: " + result);
+
+		System.out.println("\n" + "=".repeat(40) + "\n");
 	}
 
 }

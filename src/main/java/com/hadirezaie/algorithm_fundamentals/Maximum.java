@@ -1,6 +1,6 @@
 package com.hadirezaie.algorithm_fundamentals;
 
-public class findMaximum {
+public class Maximum {
 
     /**
      * Find the largest number in an array
