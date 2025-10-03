@@ -33,4 +33,11 @@ public class FindLargestNumberTest {
         int result = FindLargestNumber.findLargestNum(numbers);
         assertEquals(5, result);
     }
+
+    @Test
+    void testFindMaximum_withAllSameElements() {
+        int[] numbers = { 4, 4, 4, 4, 4 };
+        int result = FindLargestNumber.findLargestNum(numbers);
+        assertEquals(4, result);
+    }
 }
