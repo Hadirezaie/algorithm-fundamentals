@@ -1,6 +1,6 @@
 package com.hadirezaie.algorithm_fundamentals;
 
-public class Maximum {
+public class FindLargestNumber {
 
     /**
      * Find the largest number in an array
@@ -9,7 +9,7 @@ public class Maximum {
      * - Efficiency: Linear time O(n)
      * - Readability: Clear and well-documented code
      */
-    public static int findMaximum(int[] numbers) {
+    public static int findLargestNum(int[] numbers) {
         // Check for empty array
         if (numbers == null || numbers.length == 0) {
             throw new IllegalArgumentException("Array cannot be empty or null");
@@ -27,7 +27,7 @@ public class Maximum {
         return maxNumber;
     }
 
-    public static int findMaximumWithLogging(int[] numbers) {
+    public static int findLargestNumWithLogging(int[] numbers) {
         if (numbers == null || numbers.length == 0) {
             throw new IllegalArgumentException("Array cannot be empty or null");
         }
