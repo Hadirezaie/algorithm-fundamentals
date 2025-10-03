@@ -27,4 +27,10 @@ public class FindLargestNumberTest {
         assertEquals(9, result);
     }
 
+    @Test
+    void testFindMaximum_withSingleElement() {
+        int[] numbers = { 5 };
+        int result = FindLargestNumber.findLargestNum(numbers);
+        assertEquals(5, result);
+    }
 }
